@@ -1,0 +1,89 @@
+#products .description {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#products .line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#products .line:nth-child(odd) .clm .product-info {
+  margin-right: 15px;
+}
+
+#products .line:nth-child(odd) .clm .product-photo {
+  margin-left: 15px;
+}
+
+#products .line .clm {
+  width: 40%;
+}
+
+#products .line .clm .product-info {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  margin-left: 15px;
+  background: linear-gradient(118.65deg, rgba(71, 118, 230, 0.85) -14.17%, rgba(142, 84, 233, 0.85) 88.35%);
+  border-radius: 7px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+#products .line .clm .product-info h3, #products .line .clm .product-info p {
+  color: white;
+}
+
+#products .line .clm .product-photo {
+  margin-right: 15px;
+  max-height: 350px;
+  margin-bottom: 25px;
+}
+
+#products .line .clm .product-photo:last-child {
+  margin-bottom: 0;
+}
+
+#products .line .clm .product-photo img {
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 20px -3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 950px) {
+  .line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .line .clm {
+    width: 100% !important;
+  }
+  .line .clm:not(.ov-x) {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 30px;
+  }
+  .line .clm .product-info, .line .clm .product-photo {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  .line .clm .product-photo {
+    max-height: none !important;
+  }
+}
+/*# sourceMappingURL=products.css.map */

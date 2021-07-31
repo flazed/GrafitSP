@@ -1,0 +1,52 @@
+.appearance {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.appearance-down {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+}
+
+.appearance-down.active {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.appearance-x {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.appearance-x:nth-child(even) {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.appearance-x.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.appearance-left {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
+}
+
+.appearance-left.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.appearance-right {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.appearance-right.active {
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=appearance.css.map */

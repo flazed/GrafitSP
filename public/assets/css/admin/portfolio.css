@@ -1,0 +1,60 @@
+.main .upload {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  height: 250px;
+  border: 2px dashed #4791ff;
+  margin: 0;
+  padding: 0;
+}
+
+.main .upload input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main .upload span {
+  position: absolute;
+}
+
+.main .upload img {
+  border-radius: 5px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width .3s, height .3s;
+  transition: width .3s, height .3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.main .upload img.active {
+  width: 100%;
+  height: 100%;
+}
+
+.main .upload img.disabled {
+  max-width: 0 !important;
+  max-height: 0 !important;
+}
+
+table .table_img {
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,41 @@
+.appearance {
+    transition: 1s;
+
+    &-down {
+        transform: translateY(100%);
+        opacity: 0;
+
+        &.active {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    &-x {
+        transform: translateX(-100vw);
+
+        &:nth-child(even) {
+            transform: translateX(100vw);
+        }
+
+        &.active {
+            transform: none;
+        }
+    }
+
+    &-left {
+        transform: translateX(-100vw);
+
+        &.active {
+            transform: none;
+        }
+    }
+
+    &-right {
+        transform: translateX(100vw);
+
+        &.active {
+            transform: none;
+        }
+    }
+}

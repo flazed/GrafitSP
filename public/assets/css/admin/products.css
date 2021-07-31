@@ -1,0 +1,154 @@
+.main .upload {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  height: 100px;
+  border: 2px dashed #4791ff;
+  margin: 0;
+  padding: 0;
+}
+
+.main .upload input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.main .upload span {
+  position: absolute;
+}
+
+.main .upload img {
+  border-radius: 5px;
+  position: absolute;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width .3s, height .3s;
+  transition: width .3s, height .3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.main .upload img.active {
+  width: 100%;
+  height: 100%;
+}
+
+.main .upload img.disabled {
+  max-width: 0 !important;
+  max-height: 0 !important;
+}
+
+.main .img-product {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.main .img-product.is-invalid {
+  border-color: #dc3545;
+}
+
+.main .img-product:hover button {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main .img-product img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.main .img-product button {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #dc3545;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.main .img-product button::before, .main .img-product button::after {
+  content: '';
+  position: absolute;
+  background: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.main .img-product button::before {
+  height: 2px;
+  width: 60%;
+}
+
+.main .img-product button::after {
+  height: 60%;
+  width: 2px;
+}
+
+.product-photo {
+  margin-bottom: 10px;
+}
+
+.product-photo img {
+  border-radius: 5px;
+  max-width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.show-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.show-img img {
+  border-radius: 5px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,14 @@
+.alert-block {
+  position: absolute !important;
+  z-index: 999;
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.alert-block.active {
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=page.css.map */

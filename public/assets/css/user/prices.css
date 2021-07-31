@@ -1,0 +1,143 @@
+.table tr,
+.table td {
+  border-top: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+.table tr:hover .btn-basket {
+  -webkit-transform: none;
+          transform: none;
+  z-index: 1;
+  opacity: 1;
+}
+
+.table .basket {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7.5px 10px;
+}
+
+.table .basket .btn-basket {
+  background: #12ad12;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.table .basket .btn-basket.active {
+  background: #ff3b3b;
+}
+
+.basket-block .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.basket-block .item:hover {
+  background: whitesmoke;
+}
+
+.basket-block .item input {
+  width: 50px;
+}
+
+.basket-block .item .btn {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basket-block .item .btn::before, .basket-block .item .btn::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.basket-block .item .btn::before {
+  width: 15px;
+  height: 2px;
+}
+
+.basket-block .item .btn::after {
+  width: 2px;
+  height: 15px;
+}
+
+.basket-block div.hr {
+  height: 3px;
+  background: #c2c4c7;
+}
+
+.basket-block #email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  padding: 5px;
+  background: white;
+  -webkit-box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 30px -3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 1px solid #b8b8b8;
+}
+
+.basket-block #email:focus, .basket-block #email:hover {
+  outline: none;
+}
+/*# sourceMappingURL=prices.css.map */

@@ -1,0 +1,10 @@
+.alert-block {
+    position: absolute !important;
+    z-index: 999;
+    transform: translateY(-300px);
+    transition: .3s;
+
+    &.active {
+        transform: none;
+    }
+}
